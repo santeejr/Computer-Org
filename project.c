@@ -1,6 +1,6 @@
 csl1	MDR=SP=SP-1;rd
-csl2		
-csl3
+csl2			
+csl3	H=TOS
 csl4
 csl5
 csl6
