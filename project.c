@@ -1,34 +1,5 @@
-csl1	MDR=SP=SP-1;rd
-csl2			
-csl3	H=TOS
-csl4
-csl5
-csl6
-csl7
-csl8
-csl9
-csl10
-csl11
-csl12
-csl13
-csl14
-csl15
-csl16
-csl17
-csl18
-csl19
-csl20
-csl21
-csl22
-csl23
-csl24
-csl25
-csl26
-csl27
-csl28
-csl29
-csl30
-csl31
-csl32
-csl33
-csl34
+csl1	mar=sp=sp-1;rd		// puts the second entry of the stack in mar
+csl2 				// wait for the read process to finish
+csl3	h=opc=tos		// tos is assigned to opc and h
+csl4	h=h+opc			// the shift occurs by adding h to h
+cls5 	top=h			// assign h back to top of the stack
